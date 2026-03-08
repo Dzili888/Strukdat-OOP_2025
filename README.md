@@ -10,8 +10,8 @@
 ---
 
 ## Class & Object
-### Class
-**Class merupakan Blue print atau cetakan untuk membuat sebuah Object**
+### 1. Class
+**Class merupakan Blue print atau cetakan untuk membuat sebuah Object.**
 
 di program kali ini, Class utamanya (*abstract class*) adalah `Mahasiswa`. class utamanya diturunkan menjadi:
 
@@ -36,3 +36,22 @@ abstract class Mahasiswa {
 
     public abstract double UKT();
 }
+```
+
+### 2. Object
+**Object merupakan hasil/representasi (Instance) dari sebuah class.**
+
+Object yang kita pakai:
+- `mhsReguler` (merupakan *object* dari class `MahasiswaReguler`)
+- `mhsBeasiswa` (merupakan *object* dari class `MahasiswaBeasiswa`)
+
+Contoh:
+```java 
+MahasiswaReguler mhsReguler = new MahasiswaReguler("Dzili", "5027251030", 5000000);
+MahasiswaBeasiswa mhsBeasiswa = new MahasiswaBeasiswa("Ucup", "5027451045");
+
+//ini buat gunain object untuk manggil method
+System.out.println("Tagihan UKT Dzili: Rp " + mhsReguler.UKT());
+System.out.println("Tagihan UKT Ucup: Rp " + mhsBeasiswa.UKT());
+```
+
