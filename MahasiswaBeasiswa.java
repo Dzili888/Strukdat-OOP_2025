@@ -5,6 +5,6 @@ class MahasiswaBeasiswa extends Mahasiswa {
 
     @Override
     public double UKT() {
-        return 0;
+        return 0.0;
     }
 }
